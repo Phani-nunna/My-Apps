@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+         <TextView
+             android:id="@+id/tvNoRes"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="No Restaurants"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:visibility="gone" />
+        
+        <include
+            android:id="@+id/includePbar"
+            layout="@layout/customprogressbar" />
+
+        <EditText
+            android:id="@+id/editTextRes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#eeeeee"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:ems="10"
+            android:hint="Search for a Restaurant"
+            android:inputType="text"
+            android:padding="10dp"
+            android:imeOptions="actionSearch"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#555555" >
+        </EditText>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextRes" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+    
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_height="250dp" > 
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temp" />
+
+        <!-- <View -->
+        <!-- android:id="@+id/blankView" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="0dp" -->
+        <!-- android:layout_below="@+id/image" /> -->
+
+        <RelativeLayout
+            android:id="@+id/dishBodyNameLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#60000000"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/dishBodyNameLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <com.svaad.utils.RobotoRegular
+                    android:id="@+id/dishNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvDishTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dishNameTextView"
+                    android:background="#00933b"
+                    android:textSize="14sp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="#ffffff" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDishTag"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/tvSeeMoreDishes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#4cae4c"
+            android:padding="10dp"
+            android:text="View all"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/image"
+            android:layout_alignTop="@+id/image"
+            android:layout_marginRight="42dp"
+            android:visibility="gone"
+            android:layout_marginTop="18dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAddTo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:drawableLeft="@drawable/heart"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:text="Wish it"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#555555" />
+    </LinearLayout>
+
+</RelativeLayout>

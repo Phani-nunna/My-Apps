@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Svaad</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="inviteFbFriends">Invite Facebook Friends</string>
+    <string name="action_addfriends">Add friends</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_call">Call</string>
+    <string name="action_load">Load</string>
+    <string name="action_place">Place</string>
+    <string name="action_time">Time</string>
+    <string name="action_bookmark">BookMark</string>
+    <string name="action_features">Features</string>
+    <string name="check_internet">No network connection.Please try again later</string>
+    <string name="action_add">Ate it</string>
+    <string name="action_ate">Wish it</string>
+    <string name="location">Location</string>
+    <string name="swipe_up_label">Swipe up!</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="result_for">Showing result for</string>
+    <string name="menu">Menu</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_filter">Filter</string>
+    <string name="request_failed">Request failed.</string>
+    <string name=" swipe_down_label">Down</string>
+    <string name="signin_success">Signed in successfully. Please get login.</string>
+    <string name="get_logedin">Please get loged in.</string>
+    <string name="action_send">Send</string>
+    <string name="action_share">Share</string>
+    <string name="search_dish">Search dishes</string>
+    <string name="geo_point">Distance</string>
+    <string name="app_id">1392891110939348</string>
+    <string name="sdcard_not_present_toast_message">This operation requires an SD Card. But, you don\'t seem to have one in this device.</string>
+    <string name="sdcard_not_mounted_toast_message">Looks like your SD Card is not mounted. Please mount it, and try this operation again.</string>
+    <string name="success">Success</string>
+    <string name="success_wish">Added to wishlist</string>
+
+    <string-array name="menu_array">
+        <item>Profile</item>
+        <item>Home</item>
+        <item>WishList</item>
+        <item>Bookmarks</item>
+        <item>Find Friends</item>
+        <item>Settings</item>
+        <item>Hyderabad</item>
+    </string-array>
+    <string-array name="menu_array_before_login">
+        <item>Home</item>
+        <item>Hyderabad</item>
+    </string-array>
+    <string-array name="price_range_array_new">
+        <item>All Prices</item>
+        <item>Below Rs 50</item>
+        <item>Rs 50  - Rs 100</item>
+        <item>Rs 100 - Rs 150</item>
+        <item>Rs 150 - Rs 200</item>
+        <item>Rs 200 - Rs 250</item>
+        <item>Rs 250 - Rs 300</item>
+        <item>Rs 300 - Rs 500</item>
+        <item>Rs 500 - Rs 1000</item>
+        <item>Above Rs 1000</item>
+    </string-array>
+    <string-array name="veg_non_array">
+        <item>All</item>
+        <item>Veg</item>
+        <item>Non Veg</item>
+    </string-array>
+
+</resources>

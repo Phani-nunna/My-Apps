@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <RelativeLayout
+        android:id="@+id/llContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:alpha="0.6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/temp"
+                        android:visibility="gone" />
+
+                    <!-- <LinearLayout -->
+                    <!-- android:id="@+id/ll1" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_below="@+id/editText1" -->
+                    <!-- android:layout_marginLeft="10dp" -->
+                    <!-- android:layout_marginRight="10dp" -->
+                    <!-- android:orientation="horizontal" -->
+                    <!-- android:weightSum="2" > -->
+
+
+                    <!-- <LinearLayout -->
+                    <!-- android:id="@+id/llNearBy" -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:background="#ffffff" -->
+                    <!-- android:gravity="center" -->
+                    <!-- android:orientation="horizontal" > -->
+
+
+                    <!-- <com.svaad.utils.RobotoTextview -->
+                    <!-- android:id="@+id/tvNearBy" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:padding="10dp" -->
+                    <!-- android:text="Near by Restaurants" -->
+                    <!-- android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+                    <!-- </LinearLayout> -->
+
+
+                    <!-- <LinearLayout -->
+                    <!-- android:layout_width="match_parent" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:layout_marginLeft="5dp" -->
+                    <!-- android:layout_weight="1" -->
+                    <!-- android:background="#ffffff" -->
+                    <!-- android:gravity="center" -->
+                    <!-- android:orientation="horizontal" -->
+                    <!-- android:padding="10dp" -->
+                    <!-- android:visibility="gone" > -->
+
+
+                    <!-- <TextView -->
+                    <!-- android:id="@+id/tv2" -->
+                    <!-- android:layout_width="wrap_content" -->
+                    <!-- android:layout_height="wrap_content" -->
+                    <!-- android:text="Today&apos;s special" -->
+                    <!-- android:textAppearance="?android:attr/textAppearanceMedium" -->
+                    <!-- android:textSize="15sp" /> -->
+                    <!-- </LinearLayout> -->
+                    <!-- </LinearLayout> -->
+
+                    <com.svaad.utils.RobotoEdittext
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:background="#ffffff"
+                        android:ems="10"
+                        android:hint="Search for a Restaurant or Dish"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:drawableLeft="@drawable/ic_action_search"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#555555" >
+
+                        <requestFocus />
+                    </com.svaad.utils.RobotoEdittext>
+                </RelativeLayout>
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Trending Dishes"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:visibility="gone" />
+
+                <HorizontalScrollView
+                    android:id="@+id/hl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/dishesContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        android:id="@+id/popular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/imagePopular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.6"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/temp"
+                                android:visibility="gone" />
+
+                            <com.svaad.utils.RobotoRegular
+                                android:id="@+id/tvPopularRes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="Popular \n Restaurants"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#555555" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/near"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp" >
+
+                            <ImageView
+                                android:id="@+id/llNearBy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.6"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/temp"
+                                android:visibility="gone" />
+
+                            <com.svaad.utils.RobotoRegular
+                                android:id="@+id/tvnearBy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="Near by \n Restaurants"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#555555" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Discover Food in Hyderabad"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <LinearLayout
+                    android:id="@+id/homeContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/includePbar"
+                    layout="@layout/customprogressbar" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

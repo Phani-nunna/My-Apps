@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d5d6db"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="4" >
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/tvCall"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Medium Text"
+            android:textColor="#333333"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RelativeLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/phone" />
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/tvPhoneNo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="9879879876"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+      
+
+        <RelativeLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+             android:background="#eeeeee"
+             android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/tvPhoneNo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="9879879876"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/phone" />
+        </RelativeLayout>
+
+   
+        <RelativeLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+             android:background="#eeeeee"
+             android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/tvPhoneNo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="9879879876"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/phone" />
+        </RelativeLayout>
+
+     
+
+        <RelativeLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+             android:background="#eeeeee"
+            android:padding="10dp" >
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/tvPhoneNo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="9879879876"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/phone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

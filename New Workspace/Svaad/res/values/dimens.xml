@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+     <dimen name="layer_width">300dp</dimen>
+     <dimen name="tabtextsize">10dp</dimen>
+     <dimen name="tabindicatorheight">1dp</dimen>
+     
+     
+       <dimen name="sticky_height">120dp</dimen>
+    <dimen name="top_height">150dp</dimen>
+    <dimen name="page_margin">16dp</dimen>
+<dimen name="header_height">250dp</dimen>
+</resources>

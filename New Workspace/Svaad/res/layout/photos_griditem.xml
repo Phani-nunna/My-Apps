@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp" >
+
+    <RelativeLayout
+        android:id="@+id/withImage"
+        android:layout_width="match_parent"
+        android:layout_marginTop="6dp"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/wimageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temp" />
+
+        <LinearLayout
+            android:id="@+id/wdishDetailRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/radialback"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.svaad.utils.RobotoRegular
+                android:id="@+id/wtvDishName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/wtvbranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/wtvDishloves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wdishButtons"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/wimageButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_overflow" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/withoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginTop="6dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/woImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@null" />
+
+        <com.svaad.utils.RobotoRegular
+            android:id="@+id/wotvDishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/wodishButtons"
+            android:maxLines="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/wodishDetailRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/wotvbranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/wotvDishloves"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wodishButtons"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/woimageButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_overflow" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

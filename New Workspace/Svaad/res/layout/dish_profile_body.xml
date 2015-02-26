@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <LinearLayout
+        android:id="@+id/llEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/dishImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/llEmpty"
+        android:background="@drawable/temp"
+        android:scaleType="centerCrop" />
+
+    <!-- <com.flaviofaria.kenburnsview.KenBurnsView -->
+    <!-- android:id="@+id/dishImageButton" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="300dp" -->
+    <!-- android:background="@drawable/temp" -->
+    <!-- android:scaleType="centerCrop" /> -->
+
+    <LinearLayout
+        android:id="@+id/dishBodyNameLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dishImageButton"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="5" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/dishNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Rs 999"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

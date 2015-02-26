@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5d6db"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d5d6db"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#d5d6db"
+            android:layout_weight="2.9"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/dishDetailListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:verticalSpacing="5dp" >
+            </GridView>
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/tvNoResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#333333" />
+
+            <include
+                android:id="@+id/includePbar"
+                layout="@layout/customprogressbar" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

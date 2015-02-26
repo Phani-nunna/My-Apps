@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription,UselessParent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageAllFoodies"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_profile" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" >
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/tvAllFoodiesName"
+                android:layout_width="wrap_content"
+                android:maxLength="15"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/tvFollowers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAllFoodiesName"
+                android:singleLine="true"
+                android:text="Followers" />
+        </RelativeLayout>
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/tvAllFoodiesName" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignTop="@+id/imageAllFoodies" -->
+        <!-- android:layout_toRightOf="@+id/imageAllFoodies" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:text="Name" -->
+        <!-- android:textAppearance="?android:attr/textAppearanceMedium" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/tvFollowers" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignBottom="@+id/imageAllFoodies" -->
+        <!-- android:layout_alignLeft="@+id/tvAllFoodiesName" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:text="Followers" /> -->
+
+
+        <!-- <Button -->
+        <!-- android:id="@+id/btnFollow" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="35dp" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_alignTop="@+id/tvAllFoodiesName" -->
+        <!-- android:layout_marginRight="22dp" -->
+        <!-- android:background="#FF0000" -->
+        <!-- android:paddingLeft="15dp" -->
+        <!-- android:paddingRight="15dp" -->
+        <!-- android:text="Follow" -->
+        <!-- android:textColor="@android:color/white" /> -->
+
+        <Button
+            android:id="@+id/btnFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#357ebd"
+            android:focusable="false"
+            android:text="Follow"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff" />
+
+</LinearLayout>

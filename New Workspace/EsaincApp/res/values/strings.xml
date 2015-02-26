@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="version">1.1.0</string>
+    <string name="alert">Alert</string>
+    <string name="OK">OK</string>
+    <string name="OKButton">OK!</string>
+    <string name="noResults">No Results</string>
+    <string name="progressText">Please Wait.....</string>
+    <string name="Share">Share</string>
+    <string name="Font">Font</string>
+    <string name="sdcardNotAvailable">Sorry! SD Card not available.</string>
+    <string name="sdcardNoMemory">Sorry! not sufficient memory available in SD Card.</string>
+    <string name="SortBy"> Sort By </string>
+    <string name="Player_Number">Player Number</string>
+    <string name="First_Name">First Name</string>
+    <string name="Last_Name">Last Name</string>
+    <string name="Position">Position</string>
+    <string name="Class_Filter">Class Filter</string>
+    <string name="All"> All </string>
+    <string name="FR"> FR </string>
+    <string name="SO"> SO </string>
+    <string name="JR"> JR </string>
+    <string name="SR"> SR </string>
+    <string name="splashContentDescription">Splash</string>
+    <string name="newsArticleContentDescription">News Photo</string>
+    <string name="api">api2</string>
+    <bool name="tablet">false</bool>
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="uploaded_by">Uploaded By:</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="browser">Browser</string>
+
+    <string-array name="sort_by_array">
+        <item>Number</item>
+        <item>First Name</item>
+        <item>Last Name</item>
+        <item>Position</item>
+    </string-array>
+    <string-array name="class_filter_array">
+        <item>All</item>
+        <item>FR</item>
+        <item>SO</item>
+        <item>JR</item>
+        <item>SR</item>
+    </string-array>
+
+    <!-- Custom Menu -->
+
+    <string name="openBrowser">Open in Browser</string>
+    <string name="mailLink">Mail Link to this Page</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Custom Menu Photo Browser -->
+
+    <string name="Save">Save</string>
+    <string name="Copy">Copy</string>
+    <string name="Email">Email</string>
+    <string name="Cancel">Cancel</string>
+
+    <!-- not Configurable String,It's Json Attributte -->
+
+    <string name="httpGet">httpGet</string>
+    <string name="httpPost">httpPost</string>
+    <string name="json">.json</string>
+    <string name="emailSineture">/Misc/emailsignature.json</string>
+    <string name="showBios">/showBios/1.json</string>
+
+    <!-- Headline /News-Article -->
+    <string name="players">players</string>
+    <string name="data">data</string>
+    <string name="msg">msg</string>
+    <string name="articles">articles</string>
+    <string name="subTitle">subTitle</string>
+    <string name="time">time</string>
+    <string name="category">category</string>
+    <string name="title">title</string>
+    <string name="photoURL">photoURL</string>
+    <string name="newsID">newsID</string>
+    <string name="code">code</string>
+
+    <!-- Headlines/Detail-View -->
+
+    <string name="leadIn">leadIn</string>
+    <string name="body">body</string>
+    <string name="categoryID">categoryID</string>
+    <string name="photoCaption">photoCaption</string>
+    <string name="video">video</string>
+    <string name="videoCaption">videoCaption</string>
+    <string name="galleryID">galleryID</string>
+
+    <!-- Additional Links -->
+    <string name="links">links</string>
+    <string name="LinkName">LinkName</string>
+    <string name="LinkUrl">LinkUrl</string>
+
+    <!-- RosterDetail -->
+    <string name="rosterID">rosterID</string>
+    <string name="schoolId">schoolId</string>
+    <string name="schoolID">schoolID</string>
+    <string name="sportID">sportID</string>
+    <string name="seasonID">seasonID</string>
+    <string name="seasonName">seasonName</string>
+    <string name="number">number</string>
+    <string name="number_int">number_int</string>
+    <string name="fname">fname</string>
+    <string name="lname">lname</string>
+    <string name="rosterclass">class</string>
+    <string name="pos">pos</string>
+    <string name="height">height</string>
+    <string name="weight">weight</string>
+    <string name="hometown">hometown</string>
+    <string name="redshirt">redshirt</string>
+    <string name="bio">bio</string>
+    <string name="photo">photo</string>
+    <string name="prevSchool">prevSchool</string>
+    <string name="bats">bats</string>
+    <string name="rosterThrows">throws</string>
+    <string name="eventSport">eventSport</string>
+    <string name="sportCode">sportCode</string>
+
+    <!-- Recent -->
+    <string name="keys">keys</string>
+    <string name="events">events</string>
+    <string name="conference">conference</string>
+    <string name="scrimmage">scrimmage</string>
+    <string name="exhibition">exhibition</string>
+    <string name="sportName">sportName</string>
+    <string name="seasonName">seasonName</string>
+    <string name="date">date</string>
+    <string name="time">time</string>
+    <string name="timeZone">timeZone</string>
+    <string name="icalDate">icalDate</string>
+    <string name="TZID">TZID</string>
+    <string name="played">played</string>
+    <string name="xc">xc</string>
+    <string name="duel">duel</string>
+    <string name="CSE">CSE</string>
+    <string name="opponent">opponent</string>
+    <string name="note">note</string>
+    <string name="HAN">HAN</string>
+    <string name="opponentLogo">opponentLogo</string>
+    <string name="teamVideoURL">teamVideoURL</string>
+    <string name="teamAudioURL">teamAudioURL</string>
+    <string name="teamStatsURL">teamStatsURL</string>
+    <string name="teamMediaURL">teamMediaURL</string>
+    <string name="location">location</string>
+    <string name="galleryID">galleryID</string>
+    <string name="recapID">recapID</string>
+    <string name="statsURL">statsURL</string>
+    <string name="result">result</string>
+    <string name="WLT">WLT</string>
+    <string name="record">record</string>
+    <string name="stats">stats</string>
+
+    <!-- Staff -->
+    <string name="staff">staff</string>
+    <string name="staffID">staffID</string>
+    <string name="firstName">firstName</string>
+    <string name="lastName">lastName</string>
+    <string name="position">position</string>
+    <string name="type">type</string>
+    <string name="Administration">Administration</string>
+    <string name="sport">sport</string>
+    <string name="email">email</string>
+    <string name="phone">phone</string>
+    <string name="hasBio">hasBio</string>
+
+    <!-- ScoreBoard -->
+    <string name="conferenceTxt">Conference</string>
+    <string name="scrimmageTxt">Scrimmage</string>
+    <string name="exhibitionTxt">Exhibition</string>
+    <string name="recordTxt">Record:</string>
+    <string name="homeTxt">Home</string>
+    <string name="awayTxt">Away</string>
+    <string name="neutralTxt">Neutral</string>
+    <string name="recentTxt">Recent</string>
+    <string name="TodayTxt">Today</string>
+    <string name="upcomingTxt">Upcoming</string>
+    <string name="alltimeist">All time IST</string>
+    <string name="todaynoData">No events scheduled for today</string>
+    <string name="upcomingnoData">No events scheduled as upcoming</string>
+
+    <!-- Team Tab -->
+    <string name="sports">sports</string>
+    <string name="sportID">sportID</string>
+    <string name="sportName">sportName</string>
+    <string name="gender">gender</string>
+    <string name="sportCode">sportCode</string>
+    <string name="season">season</string>
+    <string name="xc">xc</string>
+    <string name="cw">cw</string>
+    <string name="cl">cl</string>
+    <string name="ct">ct</string>
+    <string name="ow">ow</string>
+    <string name="ol">ol</string>
+    <string name="ot">ot</string>
+    <string name="home">home</string>
+    <string name="away">away</string>
+    <string name="neutral">neutral</string>
+    <string name="streak">streak</string>
+    <string name="confPer">confPer</string>
+    <string name="allPer">allPer</string>
+    <string name="recordText">recordText</string>
+    <string name="Male">Male</string>
+    <string name="Coed">Coed</string>
+    <string name="Female">Female</string>
+    <string name="Fall">Fall</string>
+    <string name="Spring">Spring</string>
+    <string name="Winter">Winter</string>
+    <string name="header">header</string>
+
+    <!-- Teamwise Tab -->
+    <string name="dh">dh</string>
+    <string name="volleyball">volleyball</string>
+    <string name="displayOrder">displayOrder</string>
+    <string name="showOnWeb">showOnWeb</string>
+    <string name="showAwards">showAwards</string>
+    <string name="showStats">showStats</string>
+    <string name="awardShowDate">awardShowDate</string>
+    <string name="showRoster">showRoster</string>
+    <string name="showSchedule">showSchedule</string>
+    <string name="showStanding">showStanding</string>
+    <string name="showCoach">showCoach</string>
+    <string name="showLinks">showLinks</string>
+
+    <!-- Photos Tab -->
+    <string name="galleries">galleries</string>
+    <string name="name">name</string>
+    <string name="sportID">sportID</string>
+    <string name="seasonID">seasonID</string>
+    <string name="sportName">sportName</string>
+    <string name="seasonName">seasonName</string>
+    <string name="galleryDate">galleryDate</string>
+    <string name="photoCount">photoCount</string>
+    <string name="thumbnail">thumbnail</string>
+    <string name="image">image</string>
+    <string name="caption">caption</string>
+
+    <!-- YoutubePalylist Tab -->
+    <string name="id">id</string>
+    <string name="items">items</string>
+    <string name="title">title</string>
+    <string name="uploader">uploader</string>
+    <string name="thumb_hqDefault">hqDefault</string>
+    <string name="description">description</string>
+    <string name="duration">duration</string>
+    <string name="video">video</string>
+    <string name="done">Done</string>
+
+    <!-- Team wise Coaches Tab -->
+
+    <string name="coaches"> coaches </string>
+    <string name="rosterID"> rosterID </string>
+    <string name="schoolId"> schoolId </string>
+    <string name="sportID"> sportID </string>
+    <string name="seasonID"> seasonID </string>
+    <string name="seasonName"> seasonName </string>
+    <string name="fname"> fname </string>
+    <string name="lname"> lname </string>
+    <string name="coachType"> coachType </string>
+    <string name="bio"> bio </string>
+    <string name="photo"> photo </string>
+    <string name="prevSchool"> prevSchool </string>
+    <string name="yearsCoached"> yearsCoached </string>
+    <string name="almaMater"> almaMater </string>
+    <string name="eventSport"> eventSport </string>
+    <string name="sportCode"> sportCode </string>
+
+    <!-- Live Broadcast Tab -->
+    <string name="page">page</string>
+
+    <!-- TeamScoreBoard -->
+    <string name="teamScoreNoResultPhone">Schedule has not been released.</string>
+    <string name="teamScoreNoResultTablet">NO SCHEDULE AVAILABLE</string>
+
+    <!-- Menu Items -->
+    <string name="search">Search</string>
+    <string name="refresh">Refresh</string>
+    <!-- Team Header Title -->
+    <!-- Gender -->
+    <string name="MaleSports">Men\'s Sports</string>
+    <string name="FemaleSports">Women\'s Sports</string>
+    <string name="CoedSports">Coed Sports</string>
+    <string name="SummerSports">Summer Sports</string>
+    <!-- Season -->
+    <string name="FallSports">Fall Sports</string>
+    <string name="SpringSports">Spring Sports</string>
+    <string name="WinterSports">Winter Sports</string>
+
+    <!-- Error Messages -->
+    <string name="error_site_unreachable">The site is currently unreachable. Please try again later.</string>
+    <string name="error_no_connection">This application requires an active network connection. Please enable you connection to use this application.</string>
+    <string name="error_unsupported">This app is no longer supported.</string>
+    <string name="error_new_version">A newer version of the app is available.</string>
+    <string name="error_hidden">The selected individual is not available.</string>
+    <string name="error_schedule_hidden">The schedule is currently unavailable.</string>
+    <string name="error_roster_hidden">The roster is currently unavailable.</string>
+
+</resources>

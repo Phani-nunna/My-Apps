@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- JSON Tags -->
+    <string name="tag_data">data</string>
+    <string name="tag_errors">errors</string>
+    
+    <!-- Misc - ListLinks -->
+    <string name="tag_links">links</string>
+    <string name="tag_LinkName">LinkName</string>
+    <string name="tag_LinkUrl">LinkUrl</string>
+    
+    <!-- Misc - Custom Pages -->
+    <string name="tag_page">page</string>
+    
+    <!-- Misc - Email Signature -->
+    <string name="tag_signature">signature</string>
+    
+    <!-- News - Categories -->
+    <string name="tag_categoryID">categoryID</string>
+    <string name="tag_description">description</string>
+    <string name="tag_sportID">sportID</string>
+    <string name="tag_sportID2">sportID2</string>
+    <string name="tag_categories">categories</string>
+    
+    <!-- News - Articles -->
+    <string name="tag_newsID">newsID</string>
+    <string name="tag_title">title</string>
+    <string name="tag_subTitle">subTitle</string>
+    <string name="tag_photoURL">photoURL</string>
+    <string name="tag_category">category</string>
+    <string name="tag_time">time</string>
+    <string name="tag_articles">articles</string>
+    
+    <!-- News - Articles - ArticleID -->
+    <string name="tag_newsID">newsID</string>
+    <string name="tag_title">title</string>
+    <string name="tag_leadIn">leadIn</string>
+    <string name="tag_body">body</string>
+    <string name="tag_time">time</string>
+    <string name="tag_categoryID">categoryID</string>
+    <string name="tag_photoURL">photoURL</string>
+    <string name="tag_photoCaption">photoCaption</string>
+    <string name="tag_photoURL2">photoURL2</string>
+    <string name="tag_photoCaption2">photoCaption2</string>
+    <string name="tag_photoURL3">photoURL3</string>
+    <string name="tag_photoCaption3">photoCaption3</string>
+    <string name="tag_video">video</string>
+    <string name="tag_videoCaption">videoCaption</string>
+    <string name="tag_galleryID">galleryID</string>
+    <string name="tag_category">category</string>
+    <string name="tag_articles">articles</string>
+    
+    <!-- Photos - Galleries - GalleryID -->
+    <string name="tag_galleryID">galleryID</string>
+    <string name="tag_name">name</string>
+    <string name="tag_caption">caption</string>
+    <string name="tag_image">image</string>
+    <string name="tag_thumbnail">thumbnail</string>
+    <string name="tag_galleryDate">galleryDate</string>
+    
+    <!-- Photos - Galleries -->
+    <string name="tag_galleryID">galleryID</string>
+    <string name="tag_name">name</string>
+    <string name="tag_sportID">sportID</string>
+    <string name="tag_seasonID">seasonID</string>
+    <string name="tag_sportName">sportName</string>
+    <string name="tag_seasonName">seasonName</string>
+    <string name="tag_galleryDate">galleryDate</string>
+    <string name="tag_photoCount">photoCount</string>
+    <string name="tag_thumbnail">thumbnail</string>
+    <string name="tag_galleries">galleries</string>
+    
+    <!-- Roster - Players -->
+    <string name="tag_rosterID">rosterID</string>
+    <string name="tag_schoolID">schoolID</string>
+    <string name="tag_sportID">sportID</string>
+    <string name="tag_seasonID">seasonID</string>
+    <string name="tag_seasonName">seasonName</string>
+    <string name="tag_number">number</string>
+    <string name="tag_number_int">number_int</string>
+    <string name="tag_fname">fname</string>
+    <string name="tag_lname">lname</string>
+    <string name="tag_class">class</string>
+    <string name="tag_pos">pos</string>
+    <string name="tag_height">height</string>
+    <string name="tag_weight">weight</string>
+    <string name="tag_hometown">hometown</string>
+    <string name="tag_redshirt">redshirt</string>
+    <string name="tag_bio">bio</string>
+    <string name="tag_photo">photo</string>
+    <string name="tag_prevSchool">prevSchool</string>
+    <string name="tag_bats">bats</string>
+    <string name="tag_throws">throws</string>
+    <string name="tag_eventSport">eventSport</string>
+    <string name="tag_sportCode">sportCode</string>
+    <string name="tag_players">players</string>
+    
+    <!--  Roster - Coaches -->
+    <string name="tag_rosterID">rosterID</string>
+    <string name="tag_schoolID">schoolID</string>
+    <string name="tag_sportID">sportID</string>
+    <string name="tag_seasonID">seasonID</string>
+    <string name="tag_seasonName">seasonName</string>
+    <string name="tag_fname">fname</string>
+    <string name="tag_lname">lname</string>
+    <string name="tag_coachType">coachType</string>
+    <string name="tag_bio">bio</string>
+    <string name="tag_photo">photo</string>
+    <string name="tag_yearsCoached">yearsCoached</string>
+    <string name="tag_almaMater">almaMater</string>
+    <string name="tag_eventSport">eventSport</string>
+    <string name="tag_sportCode">sportCode</string>
+    <string name="tag_coaches">coaches</string>
+    <string name="tag_msg">msg</string>
+    <string name="tag_coach">coach</string>
+    
+    <!-- Schedule - Get -->
+    <string name="tag_scheduleID">scheduleID</string>
+    <string name="tag_date">date</string>
+    <string name="tag_time">time</string>
+    <string name="tag_timeZone">timeZone</string>
+    <string name="tag_galleryID">galleryID</string>
+    <string name="tag_sportID">sportID</string>
+    <string name="tag_seasonID">seasonID</string>
+    <string name="tag_seasonName">seasonName</string>
+    <string name="tag_sportName">sportName</string>
+    <string name="tag_dh">dh</string>
+    <string name="tag_gender">gender</string>
+    <string name="tag_volleyball">volleyball</string>
+    <string name="tag_xc">xc</string>
+    <string name="tag_sportCode">sportCode</string>
+    <string name="tag_season">season</string>
+    <string name="tag_hID">hID</string>
+    <string name="tag_vID">vID</string>
+    <string name="tag_hScore">hScore</string>
+    <string name="tag_vScore">vScore</string>
+    <string name="tag_hSchoolName">hSchoolName</string>
+    <string name="tag_vSchoolName">vSchoolName</string>
+    <string name="tag_hTeamCode">hTeamCode</string>
+    <string name="tag_vTeamCode">vTeamCode</string>
+    <string name="tag_hRank">hRank</string>
+    <string name="tag_vRank">vRank</string>
+    <string name="tag_extScore">extScore</string>
+    <string name="tag_conf">conf</string>
+    <string name="tag_tour">tour</string>
+    <string name="tag_played">played</string>
+    <string name="tag_neutral">neutral</string>
+    <string name="tag_location">location</string>
+    <string name="tag_scrimmage">scrimmage</string>
+    <string name="tag_dhSecondGame">dhSecondGame</string>
+    <string name="tag_postSeason">postSeason</string>
+    <string name="tag_exhibition">exhibition</string>
+    <string name="tag_hMediaURL">hMediaURL</string>
+    <string name="tag_vMediaURL">vMediaURL</string>
+    <string name="tag_recapID">recapID</string>
+    <string name="tag_duel">duel</string>
+    <string name="tag_hVideoURL">hVideoURL</string>
+    <string name="tag_vVideoURL">vVideoURL</string>
+    <string name="tag_hAudioURL">hAudioURL</string>
+    <string name="tag_vAudioURL">vAudioURL</string>
+    <string name="tag_hStatsURL">hStatsURL</string>
+    <string name="tag_vStatsURL">vStatsURL</string>
+    <string name="tag_note">note</string>
+    <string name="tag_CSE">CSE</string>
+    <string name="tag_HAN">HAN</string>
+    <string name="tag_events">events</string>
+    
+    <!-- Schedule - Events -->
+    <string name="tag_keys">keys</string>
+    <string name="tag_conference">conference</string>
+    <string name="tag_scrimmage">scrimmage</string>
+    <string name="tag_exhibition">exhibition</string>
+    
+    <string name="tag_scheduleID">scheduleID</string>
+    <string name="tag_sportName">sportName</string>
+    <string name="tag_seasonName">seasonName</string>
+    <string name="tag_date">date</string>
+    <string name="tag_time">time</string>
+    <string name="tag_timeZone">timeZone</string>
+    <string name="tag_icalDate">icalDate</string>
+    <string name="tag_played">played</string>
+    <string name="tag_xc">xc</string>
+    <string name="tag_duel">duel</string>
+    <string name="tag_CSE">CSE</string>
+    <string name="tag_opponent">opponent</string>
+    <string name="tag_note">note</string>
+    <string name="tag_HAN">HAN</string>
+    <string name="tag_opponentLogo">opponentLogo</string>
+    <string name="tag_teamVideoURL">teamVideoURL</string>
+    <string name="tag_teamAudioURL">teamAudioURL</string>
+    <string name="tag_teamStatsURL">teamStatsURL</string>
+    <string name="tag_teamMediaURL">teamMediaURL</string>
+    <string name="tag_location">location</string>
+    <string name="tag_galleryID">galleryID</string>
+    <string name="tag_recapID">recapID</string>
+    <string name="tag_statsURL">statsURL</string>
+    <string name="tag_result">result</string>
+    <string name="tag_WLT">WLT</string>
+    <string name="tag_msg">msg</string>
+    <string name="tag_events">events</string>
+    <string name="tag_record">record</string>
+    
+    <!-- Search - News -->
+    <string name="tag_newsID">newsID</string>
+    <string name="tag_title">title</string>
+    <string name="tag_subTitle">subTitle</string>
+    <string name="tag_photoURL">photoURL</string>
+    <string name="tag_category">category</string>
+    <string name="tag_time">time</string>
+    <string name="tag_articles">articles</string>
+    
+    <!-- Sports - ListTeams -->
+    <string name="tag_sportID">sportID</string>
+    <string name="tag_sportName">sportName</string>
+    <string name="tag_gender">gender</string>
+    <string name="tag_sportCode">sportCode</string>
+    <string name="tag_season">season</string>
+    <string name="tag_xc">xc</string>
+    <string name="tag_cw">cw</string>
+    <string name="tag_cl">cl</string>
+    <string name="tag_ct">ct</string>
+    <string name="tag_ow">ow</string>
+    <string name="tag_ol">ol</string>
+    <string name="tag_ot">ot</string>
+    <string name="tag_home">home</string>
+    <string name="tag_away">away</string>
+    <string name="tag_neutral">neutral</string>
+    <string name="tag_streak">streak</string>
+    <string name="tag_confPer">confPer</string>
+    <string name="tag_allPer">allPer</string>
+    <string name="tag_recordText">recordText</string>
+    <string name="tag_sports">sports</string>
+    
+    <!-- Sports - SportInfo -->
+    <string name="tag_sportID">sportID</string>
+    <string name="tag_sportName">sportName</string>
+    <string name="tag_dh">dh</string>
+    <string name="tag_gender">gender</string>
+    <string name="tag_volleyball">volleyball</string>
+    <string name="tag_xc">xc</string>
+    <string name="tag_displayOrder">displayOrder</string>
+    <string name="tag_sportCode">sportCode</string>
+    <string name="tag_showOnWeb">showOnWeb</string>
+    <string name="tag_showAwards">showAwards</string>
+    <string name="tag_showStats">showStats</string>
+    <string name="tag_awardShowDate">awardShowDate</string>
+    <string name="tag_showRoster">showRoster</string>
+    <string name="tag_showSchedule">showSchedule</string>
+    <string name="tag_showStanding">showStanding</string>
+    <string name="tag_season">season</string>
+    <string name="tag_showCoach">showCoach</string>
+    <string name="tag_showLinks">showLinks</string>
+    <string name="tag_sports">sports</string>
+    
+    <!-- Staff - Members -->
+    <string name="tag_staffID">staffID</string>
+    <string name="tag_firstName">firstName</string>
+    <string name="tag_lastName">lastName</string>
+    <string name="tag_position">position</string>
+    <string name="tag_type">type</string>
+    <string name="tag_sport">sport</string>
+    <string name="tag_email">email</string>
+    <string name="tag_phone">phone</string>
+    <string name="tag_staffPhotoURL">staffPhotoURL</string>
+    <string name="tag_hasBio">hasBio</string>
+    <string name="tag_position">position</string>
+    <string name="tag_bio">bio</string>
+    <string name="tag_staff">staff</string>
+    
+    <!-- Youtube -->
+    <string name="tag_items">items</string>
+    <string name="tag_video">video</string>
+    <string name="tag_id">id</string>
+    <string name="tag_title">title</string>
+    <string name="tag_description">description</string>
+    <string name="tag_duration">duration</string>
+    <string name="tag_thumbnail">thumbnail</string>
+    <string name="tag_sqDefault">sqDefault</string>
+    <string name="tag_hqDefault">hqDefault</string>
+    <string name="tag_uploader">uploader</string>
+    
+</resources>

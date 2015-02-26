@@ -1,0 +1,49 @@
+<resources>
+
+   
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+     <style name="Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+    <style name="Item.Sticky">
+        <item name="android:background">@color/sticky_item</item>
+        <item name="android:layout_height">@dimen/sticky_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">@color/sticky_item_text</item>
+    </style>
+    
+    <style name="ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+
+    </style>
+
+    <style name="pager">
+        <item name="pstsIndicatorColor">@color/tabindicator</item>
+        <item name="pstsShouldExpand">true</item>
+        <item name="pstsTextAllCaps">false</item>
+        <item name="pstsDividerColor">@color/tabtext</item>
+<!--           <item name="setIndicatorHeight">@color/tabtext</item> -->
+        
+<!--         <item name="pstsSetTextSize">@dimen/tabtextsize</item> -->
+    </style>
+
+</resources>

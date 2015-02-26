@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello ,Auditoria Versatil</string>
+    <string name="app_name">Auditoria Versatil</string>
+    <string name="logout">Logout</string>
+    <string name="row_no">No: </string>
+    <string name="serial_number"> Serial Number</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="info"> info</string>
+    <string name="sync">sync</string>
+    <string name="auditor">Auditor</string>
+    <string name="user_name">User Name :</string>
+    <string name="password">Password :</string>
+    <string name="resposible">Responsible :</string>
+    <string name="operator"> Operator:  </string>
+    <string name="supervisor">Supervisor:</string>
+    <string name="technical">Technical:</string>
+    <string name="remark">Remark :</string>
+    <string name="snap">Snap :</string>
+    <string name="prevoius"> previous </string>
+    <string name="no_internet"> No Internet Connection </string>
+    <string name="sync_tittle"> want to sync now? </string>
+    <string name="sync_dialog_yes">Yes</string>
+    <string name="sync_dialog_no">No</string>
+    <string name="take_image">Take Photo</string>
+    <string name="proceed"> Proceed </string>
+    <string name="take_photo"> * Take Picture * </string>
+
+</resources>

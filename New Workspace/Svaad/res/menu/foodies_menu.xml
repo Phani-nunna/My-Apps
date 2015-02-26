@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+
+    <item
+        android:id="@+id/action_addfriends"
+        android:icon="@drawable/group"
+        android:orderInCategory="2"
+        android:title="@string/action_addfriends"
+        yourapp:showAsAction="always"/>
+      <item
+        android:id="@+id/menu_load"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="3"
+        android:title="@string/action_load"
+        yourapp:showAsAction="always"/>
+   
+
+</menu>

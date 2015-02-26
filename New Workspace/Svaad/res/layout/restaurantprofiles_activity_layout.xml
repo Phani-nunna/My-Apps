@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/restaurantprofileheader" />
+
+            <LinearLayout
+                android:id="@+id/touch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#4cae4c"
+                android:gravity="center"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/textdrag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Full Menu"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/touch"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Swipe through the cards to discover what people love to eat here..."
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/ctWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvNoReults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/includePbar"
+                    layout="@layout/customprogressbar" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/home_cam" />
+
+    <com.slidinglayer.SlidingLayer
+        xmlns:slidingLayer="http://schemas.android.com/apk/res/com.svaad"
+        android:id="@+id/slidingLayer"
+        android:layout_width="@dimen/layer_width"
+        android:layout_height="wrap_content"
+        slidingLayer:closeOnTapEnabled="false" >
+
+        <RelativeLayout
+            android:id="@+id/relativeSliding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
+
+            <LinearLayout
+                android:id="@+id/resContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </com.slidinglayer.SlidingLayer>
+
+</RelativeLayout>

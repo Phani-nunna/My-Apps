@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo</string>
+    <string name="UniversityName">Demo</string>
+    <string name="SiteURL">http://demo3s.sidhelp.com</string>
+    <string name="GoogleAnalyticsTrackingID">UA-37578641-31</string>
+
+    <!-- ApplicationColors -->
+    <color name="HyperlinksColor">#610404</color>
+    <color name="Default">#6E1C17</color>
+    <color name="TableCellSelection">#937E61</color>
+    <color name="Border">#ffffff</color>
+    <color name="scoreboardButtonsActiveText">#FFFFFF</color>
+    <color name="scoreboardButtonsText">#FFFFFF</color>
+    <color name="scoreboardKeyText">#000000</color>
+
+    <!-- Tab Bars -->
+    <!--
+    	Importnat Note:
+    	
+    	[1] To chnage the sequence please rearrange items under TabBars
+    	[2] To remove a Tab, just comment out it from TabBars array
+    -->
+
+    <array name="TabBars">
+
+        <!-- <item>@array/home</item> -->
+        <item>@array/customizedNewsPage</item>
+        <item>@array/schedule</item>
+        <item>@array/teams</item>
+        <item>@array/photos</item>
+        <item>@array/staff</item>
+        <item>@array/youtubePlaylist</item>
+        <item>@array/CustomTab1</item>
+ <!-- Live Broadcast -->
+        <item>@array/CustomTab2</item>
+ <!-- Social Media -->
+        <item>@array/UniversitySound</item>
+        <item>@array/links</item>
+        <item>@array/mediaschedule</item>
+    </array>
+
+    <!--
+    	Tabs - Importnat Note
+    	=====================
+    	
+    	Please don't change position of any item of "string-array"
+    -->
+    <!--
+    <string-array name="home">
+        <item name="TabBarArea">home</item>
+        <item name="TabBarTitle">Home</item>
+        <item name="RefreshTime">1800</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Tablet">Kohawk Athletics</item>
+        <item name="NavBarTitle_Phone">Kohawk Athletics</item>
+        <item name="TabBarAPI">/misc/custompages/pageID/index.json</item>
+    </string-array>
+    -->
+    <string-array name="customizedNewsPage">
+        <item name="TabBarArea">customizedNewsPage</item>
+        <item name="TabBarTitle">Headlines</item>
+        <item name="RefreshTime">1800</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Headlines</item>
+        <item name="NavBarTitle_Tablet">Headlines</item>
+    </string-array>
+    <string-array name="schedule">
+        <item name="TabBarArea">schedule</item>
+        <item name="TabBarTitle">Scoreboard</item>
+        <item name="RefreshTime">1800</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Scoreboard</item>
+        <item name="NavBarTitle_Tablet">Scoreboard</item>
+    </string-array>
+    <string-array name="teams">
+        <item name="TabBarArea">teams</item>
+        <item name="TabBarTitle">Teams</item>
+        <item name="RefreshTime">86400</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Teams</item>
+        <item name="NavBarTitle_Tablet">Teams</item>
+        <item name="SortBy">gender</item>
+    </string-array>
+    <string-array name="photos">
+        <item name="TabBarArea">photos</item>
+        <item name="TabBarTitle">Photos</item>
+        <item name="RefreshTime">40000</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Photos</item>
+        <item name="NavBarTitle_Tablet">Photos</item>
+    </string-array>
+    <string-array name="staff">
+        <item name="TabBarArea">staff</item>
+        <item name="TabBarTitle">Staff</item>
+        <item name="RefreshTime">86400</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Staff</item>
+        <item name="NavBarTitle_Tablet">Staff</item>
+    </string-array>
+    <string-array name="youtubePlaylist">
+        <item name="TabBarArea">youtubePlaylist</item>
+        <item name="TabBarTitle">Videos</item>
+        <item name="RefreshTime">86400</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Videos</item>
+        <item name="NavBarTitle_Tablet">Videos</item>
+        <item name="YoutubePlaylistID">UUcw6_Ju7y1SE9fUuG42qp3g</item>
+        <item name="YTImageCrop">false</item>
+    </string-array>
+    <string-array name="CustomTab1">
+        <item name="TabBarArea">CustomTab1</item>
+        <item name="TabBarTitle">Gameday Live</item>
+        <item name="RefreshTime">1800</item>
+        <item name="HTMLLinkAction">samepage</item>
+        <item name="NavBarTitle_Phone">Gameday Live</item>
+        <item name="NavBarTitle_Tablet">Gameday Live</item>
+        <item name="TabBarAPI">/misc/custompages/pageID/broadcast.json</item>
+    </string-array>
+    <string-array name="CustomTab2">
+        <item name="TabBarArea">CustomTab2</item>
+        <item name="TabBarTitle">Social Media</item>
+        <item name="RefreshTime">1800</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Social Media</item>
+        <item name="NavBarTitle_Tablet">Social Media</item>
+        <item name="TabBarAPI">/misc/custompages/pageID/socialmedia.json</item>
+    </string-array>
+    <string-array name="UniversitySound">
+        <item name="TabBarArea">UniversitySound</item>
+        <item name="TabBarTitle">Uni Sound</item>
+        <item name="blank"></item>
+        <item name="blank2"></item>
+        <item name="NavBarTitle_Phone">University Sound</item>
+        <item name="NavBarTitle_Tablet">University Sound</item>
+        <item name="BgForTeamSoundPage">splash</item>
+        <!-- We will have a sound file in assets folder. Please keep same name in library and main project. -->
+        <item name="AthleticTeamSoundFilename">uni_sound.mp3</item>
+    </string-array>
+    <string-array name="links">
+        <item name="TabBarArea">links</item>
+        <item name="TabBarTitle">Additional Links</item>
+        <item name="RefreshTime">86400</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Additional Links</item>
+        <item name="NavBarTitle_Tablet">Additional Links</item>
+    </string-array>
+    <string-array name="mediaschedule">
+        <item name="TabBarArea">mediaschedule</item>
+        <item name="TabBarTitle">Media Schedule</item>
+        <item name="RefreshTime">1800</item>
+        <item name="HTMLLinkAction"></item>
+        <item name="NavBarTitle_Phone">Media Schedule</item>
+        <item name="NavBarTitle_Tablet">Media Schedule</item>
+    </string-array>
+    <!-- TeamWiseTabBars -->
+    <!-- Tab Bars -->
+    <!--
+    	Importnat Note:
+    	
+    	[1] To chnage the sequence please rearrange items under TabBars
+    	[2] To remove a Tab, just comment out it from TabBars array
+    	[3] Please don't change position of any item of "string-array"
+    -->
+
+    <array name="TeamWiseTabBars">
+        <item>@array/teamwise_news</item>
+        <item>@array/teamwise_schedule</item>
+        <item>@array/teamwise_roster</item>
+        <item>@array/teamwise_coaches</item>
+        <item>@array/teamwise_links</item>
+    </array>
+
+    <!--
+    	Teamwise Tabs - Importnat Note
+    	==============================
+    	
+    	Please don't change position of any item of "string-array" 
+    -->
+    <string-array name="teamwise_news">
+        <item name="TeamWiseTabBarArea">teamwise_news</item>
+        <item name="TeamWiseTabBarTitle">Headlines</item>
+        <item name="TeamWiseRefreshTime">1800</item>
+        <item name="TeamwiseHtmlLinkAction"></item>
+    </string-array>
+    <string-array name="teamwise_schedule">
+        <item name="TeamWiseTabBarArea">teamwise_schedule</item>
+        <item name="TeamWiseTabBarTitle">Schedule</item>
+        <item name="TeamWiseRefreshTime">1800</item>
+        <item name="TeamwiseHtmlLinkAction"></item>
+    </string-array>
+    <string-array name="teamwise_roster">
+        <item name="TeamWiseTabBarArea">teamwise_roster</item>
+        <item name="TeamWiseTabBarTitle">Roster</item>
+        <item name="TeamWiseRefreshTime">86400</item>
+        <item name="TeamwiseHtmlLinkAction"></item>
+    </string-array>
+    <string-array name="teamwise_coaches">
+        <item name="TeamWiseTabBarArea">teamwise_coaches</item>
+        <item name="TeamWiseTabBarTitle">Coaches</item>
+        <item name="TeamWiseRefreshTime">86400</item>
+        <item name="TeamwiseHtmlLinkAction"></item>
+    </string-array>
+    <string-array name="teamwise_links">
+        <item name="TeamWiseTabBarArea">teamwise_links</item>
+        <item name="TeamWiseTabBarTitle">Links</item>
+        <item name="TeamWiseRefreshTime">86400</item>
+        <item name="TeamwiseHtmlLinkAction"></item>
+    </string-array>
+
+    <!-- Dimensions -->
+    <dimen name="roster_thumbnail_pic_height">112dp</dimen>
+    <dimen name="roster_thumbnail_pic_width">85dp</dimen>
+    <dimen name="NewsThumbnailPicWidth">98dp</dimen>
+
+    <integer name="NewsImageHeight">398</integer>
+    <integer name="NewsImageWidth">748</integer>
+    <integer name="RosterImageHeight">224</integer>
+    <integer name="RosterImageWidth">169</integer>
+
+    <color name="pressed_esaincbase">#CCD1AC77</color>
+
+</resources>

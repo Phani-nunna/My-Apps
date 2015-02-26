@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+    <dimen name="mediam_text_size">15sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="headline_raw_height">68dip</dimen>
+    <dimen name="headline_tablet_mainText">16dip</dimen>
+    <dimen name="headline_tablet_subText">13dip</dimen>
+    <dimen name="headline_Image_Hight">65dip</dimen>
+    <dimen name="staff_name_size">13sp</dimen>
+    <dimen name="staff_postion_size">10sp</dimen>
+    <dimen name="staff_phone_size">11sp</dimen>
+    <dimen name="staff_Fild_Width">130dp</dimen>
+    <dimen name="addLink_text_size">18sp</dimen>
+    <dimen name="noResult_text_size">16sp</dimen>
+    <dimen name="Team_name_size">15sp</dimen>
+    <dimen name="header_listview">14sp</dimen>
+    <dimen name="scoreboard_tab_txt_size">16sp</dimen>
+    <dimen name="scoreboard_tablet_subText">11sp</dimen>
+    <dimen name="scoreboard_tablet_mainText">19dp</dimen>
+    <dimen name="Roster_detail_Name">16dp</dimen>
+    <dimen name="Roster_detail_property">12dp</dimen>
+    <dimen name="Roster_detail_education">12dp</dimen>
+    <dimen name="Photos_Catagory">15dp</dimen>
+    <dimen name="Photos_SportName">18dp</dimen>
+    <dimen name="Photos_DateTime">15dp</dimen>
+    <dimen name="teamScoreBoard_records">18sp</dimen>
+    <dimen name="Roster_Team_SortBy">15dp</dimen>
+    <dimen name="Roster_Team_SortName">15dp</dimen>
+    <dimen name="Roster_Team_SortList">20dp</dimen>
+    <dimen name="Roster_Team_MainLabel">14dp</dimen>
+    <dimen name="Roster_Team_SubLabel">11dp</dimen>
+    <dimen name="Roster_Team_height">250dp</dimen>
+    <dimen name="video_title_phone">14sp</dimen>
+    <dimen name="video_title_tablet">14sp</dimen>
+    <dimen name="video_Thumbnail_Hight">90dip</dimen>
+    <dimen name="Photo_height">95dp</dimen>
+    <dimen name="ThumbnailHeight">108dp</dimen>
+    <dimen name="ThumbnailRawHeight">130dp</dimen>
+
+</resources>

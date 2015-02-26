@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   
+  
+    <!-- Default API URL -->
+    <string name="api_default">/%1$s/v1/%2$s</string>
+    
+    <!-- Headline API URLs -->
+    <string name="api_news_articles">/%1$s/v1/%2$s/news/articles.json</string>
+    <string name="api_search_news_criteria">/%1$s/v1/%2$s/search/news/criteria/%3$s.json</string>
+    <string name="api_news_articles_articleID">/%1$s/v1/%2$s/news/articles/articleID/%3$s.json</string>
+    <string name="api_news_articles_sportID">/%1$s/v1/%2$s/news/articles/sportID/%3$s.json</string>
+    <string name="api_search_news_sportID_criteria">/%1$s/v1/%2$s/search/news/sportID/%3$s/criteria/%4$s.json</string>
+    
+    <!-- Schedule API URLs -->
+    <string name="api_schedule_events_recent">/%1$s/v1/%2$s/schedule/events/recent/1.json</string>
+    <string name="api_schedule_events_today">/%1$s/v1/%2$s/schedule/events/today/1.json</string>
+    <string name="api_schedule_events_upcoming">/%1$s/v1/%2$s/schedule/events/upcoming/1.json</string>
+    <string name="api_schedule_events_sportID">/%1$s/v1/%2$s/schedule/events/sportID/%3$s.json</string>
+    <string name="api_media_schedule">/%1$s/v1/%2$s/schedule/events/media/1.json</string>
+    
+    <!-- Teams API URLs -->
+    <string name="api_sports_teams">/%1$s/v1/%2$s/sports/list-teams.json</string>
+    <string name="api_sport_info">/%1$s/v1/%2$s/sports/sport-info/sportID/%3$s.json</string>
+    
+    <!-- Staff API URLs -->
+    <string name="api_staff_members">/%1$s/v1/%2$s/staff/members.json</string>
+    <string name="api_staff_members_staffID">/%1$s/v1/%2$s/staff/members/staffID/%3$s.json</string>
+    
+    <!-- Roster API URLs -->
+    <string name="api_roster_sportID">/%1$s/v1/%2$s/roster/get/sportID/%2$s.json</string>
+    <string name="api_roster_players_sportID">/%1$s/v1/%2$s/roster/players/sportID/%3$s.json</string>
+    <string name="api_roster_players_rosterID">/%1$s/v1/%2$s/roster/players/rosterID/%3$s.json</string>
+    
+    <!-- Coaches API URLs -->
+    <string name="api_roster_coach_sportID">/%1$s/v1/%2$s/roster/coaches/sportID/%3$s.json</string>
+    <string name="api_roster_coaches_rosterID">/%1$s/v1/%2$s/roster/coaches/rosterID/%3$s/showBios/1.json</string>
+    <string name="api_roster_coaches_bios_sportID">/%1$s/v1/%2$s/roster/coaches/sportID/%3$s/showBios/1.json</string>
+    <string name="api_checkcoach_rosterID">/%1$s/v1/%2$s/roster/checkcoach/rosterID/%3$s.json</string>
+    
+    <!-- Links API URLs -->
+    <string name="api_misc_listLinks">/%1$s/v1/%2$s/Misc/listlinks.json</string>
+    <string name="api_misc_listlinks_sportID">/%1$s/v1/%2$s/Misc/listlinks/sportID/%3$s.json</string>
+    
+    <!-- Photos API URLs -->
+    <string name="api_photos_galleries">/%1$s/v1/%2$s/Photos/galleries.json</string>
+    <string name="api_photos_galleries_galleriesID">/%1$s/v1/%2$s/Photos/galleries/galleryID/%3$s.json</string>
+    
+   
+    
+</resources>

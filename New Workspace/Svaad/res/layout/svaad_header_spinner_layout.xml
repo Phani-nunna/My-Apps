@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5d6db"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlLogin"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#000000" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:alpha="0.6"
+                android:scaleType="centerCrop"
+                android:src="@drawable/temp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <com.svaad.utils.RobotoRegular
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Discover delicious dishes around you"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#4cae4c"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:padding="10dp"
+                        android:text="Login"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/btnJoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="#d43f3a"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:padding="10dp"
+                        android:text="Join"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/llSpinner" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="50dp" -->
+        <!-- android:layout_below="@+id/rlLogin" -->
+        <!-- android:layout_marginBottom="10dp" -->
+        <!-- android:background="#ffffff" -->
+        <!-- android:orientation="horizontal" -->
+        <!-- android:weightSum="5" > -->
+
+
+        <!-- <Spinner -->
+        <!-- android:id="@+id/spinner1" -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="4" -->
+        <!-- android:gravity="clip_vertical" /> -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="0dp" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:gravity="center" > -->
+
+
+        <!-- <ImageButton -->
+        <!-- android:id="@+id/btnRefresh" -->
+        <!-- android:layout_width="40dp" -->
+        <!-- android:layout_height="40dp" -->
+        <!-- android:background="@drawable/refresh" -->
+        <!-- android:scaleType="centerCrop" /> -->
+        <!-- </LinearLayout> -->
+        <!-- </LinearLayout> -->
+
+        <Button
+            android:id="@+id/btnFoodies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSpinner"
+            android:text="Foodies"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFoodies"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/includePbar"
+        layout="@layout/customprogressbar" />
+
+</LinearLayout>

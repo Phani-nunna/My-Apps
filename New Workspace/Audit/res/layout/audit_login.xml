@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="315dip"
+        android:background="#FFFFFF" >
+        
+         
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="500dip"
+            android:layout_height="180dip"
+            android:layout_marginLeft="150dip"
+            android:layout_marginRight="150dip"
+            android:layout_marginTop="100dip"
+            android:background="@drawable/textboxdark" >
+            
+           
+          <TextView
+                android:id="@+id/auditor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auditor"
+                android:layout_marginLeft="160dip"
+                android:layout_marginTop="5dip"
+                 android:textColor="#000000"
+                 android:textStyle="bold"/>
+        
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="42dip"
+                android:text="@string/user_name"
+                android:textColor="#000000" />
+          
+            <EditText
+                android:id="@+id/input_userName"
+                android:layout_width="200dip"
+                android:layout_height="30dip"                              
+                android:layout_marginLeft="50dip"
+                android:background="@drawable/textboxdark"
+                android:layout_marginTop="35dip"
+                android:layout_toRightOf="@+id/userName" >
+
+</EditText>
+            <TextView
+                android:id="@+id/passWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/userName"
+                android:layout_below="@+id/input_userName"
+                android:layout_marginTop="30dip"
+                android:text="@string/password"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/input_pwd"
+                android:layout_width="200dip"
+                android:layout_height="30dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/textboxdark"
+                android:layout_below="@+id/input_userName"
+                android:layout_marginLeft="50dip"
+                android:layout_toRightOf="@+id/passWord" 
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="120dip"
+                android:layout_marginTop="10dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/input_pwd"
+                android:layout_marginLeft="230dip"
+                android:tag="2"
+                android:background="@drawable/submit"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

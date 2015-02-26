@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/mainRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userMainRl" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temp" />
+
+        <RelativeLayout
+            android:id="@+id/tvDishNameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#60000000" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp" >
+
+                <com.svaad.utils.RobotoRegular
+                    android:id="@+id/tvDishName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvCommenttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDishTag"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvDishTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDishName"
+                    android:background="#00933b"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="2dp"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvResName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCommenttext"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvLocationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCommenttext"
+                    android:layout_toRightOf="@+id/tvResName"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainRl"
+        android:background="#eeeeee" >
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/tvAteitCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl"
+        android:background="#dedede" />
+
+    <RelativeLayout
+        android:id="@+id/resNameRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl"
+        android:background="#ffffff"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/tvResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Name of the Restaurant"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/tvLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvResName"
+            android:singleLine="true"
+            android:text="Location"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+    <!-- <View -->
+    <!-- android:id="@+id/firstView" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="1dp" -->
+    <!-- android:layout_below="@+id/resNameRl" -->
+    <!-- android:background="#eeeeee" /> -->
+
+    <RelativeLayout
+        android:id="@+id/actionRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondView"
+        android:background="#eeeeee"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <com.svaad.utils.RobotoButton
+                    android:id="@+id/btnAteIt"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border"
+                    android:drawableLeft="@drawable/love_ate"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="Ate it"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <!-- <View -->
+            <!-- android:layout_width="1dp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_marginBottom="5dp" -->
+            <!-- android:layout_marginTop="5dp" -->
+            <!-- android:background="#999999" /> -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.svaad.utils.RobotoButton
+                    android:id="@+id/btnAddTo"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border"
+                    android:drawableLeft="@drawable/heart"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="Wish it"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#555555" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

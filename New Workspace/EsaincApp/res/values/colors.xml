@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- A COLOR NAMED For No Resuls text Value -->
+    <color name="margenta">#701F19</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_light">#D9D9D9</color>
+    <color name="darkGray">#555555</color>
+    <color name="black">#000000</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="solid_white">#ffffffff</color>
+   	<color name="blue">#2257D5</color>
+    <color name="background">#FF888888</color>
+
+</resources>

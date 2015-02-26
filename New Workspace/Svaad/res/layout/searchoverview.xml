@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5d6db" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.svaad.utils.RobotoEdittext
+                    android:id="@+id/editTextSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:hint="Search for a Restaurant or Dish"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="#555555" >
+                </com.svaad.utils.RobotoEdittext>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvDishes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dishes"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvSeeMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#cccccc"
+                    android:padding="5dp"
+                    android:text="View All"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearDishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvNoReults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="No results found"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#333333"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/includePbar"
+                layout="@layout/customprogressbar" />
+
+            <RelativeLayout
+                android:id="@+id/rlRestaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvRestaurants"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Restaurants"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvResSeeMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#cccccc"
+                    android:padding="5dp"
+                    android:text="View All"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRestaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header_layout"
+    android:background="@null">
+    <TextView
+        android:id="@+id/search_main"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Search for Restaurants and dishes"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/menuTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_main"
+        android:paddingLeft="16dp"
+        android:paddingRight="1dp"
+        android:text="BreakFast"
+        android:textColor="@android:color/black"
+        android:textSize="20dip"
+        />
+    <TextView
+        android:id="@+id/ArrowTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_main"
+        android:layout_toRightOf="@id/menuTxt"
+        android:layout_marginLeft="5dp"
+        android:text=">"
+        android:textColor="@android:color/black"
+        android:textSize="20dip"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:paddingTop="5dp"
+        android:layout_below="@id/menuTxt"
+        android:text="Its time for Breakfast...checkout some out of the lists we curated for u"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="mediam_text_size">14sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="headline_raw_height">85dp</dimen>
+    <dimen name="headline_tablet_mainText">16dp</dimen>
+    <dimen name="headline_tablet_subText">14dp</dimen>
+    <dimen name="headline_Image_Height">70dp</dimen>
+    <dimen name="headerDetailsize">7dp</dimen>
+    <dimen name="mediam_text_size">11sp</dimen>
+    <dimen name="noResult_text_size">16sp</dimen>
+    <dimen name="staff_name_size">15sp</dimen>
+    <dimen name="staff_postion_size">12sp</dimen>
+    <dimen name="staff_phone_size">13sp</dimen>
+    <dimen name="staff_Fild_Width">130dp</dimen>
+    <dimen name="addLink_text_size">16sp</dimen>
+    <dimen name="Team_name_size">16sp</dimen>
+    <dimen name="header_listview">14sp</dimen>
+    <dimen name="scoreboard_tab_txt_size">14sp</dimen>
+    <dimen name="scoreboard_tablet_subText">11sp</dimen>
+    <dimen name="scoreboard_tablet_mainText">16dp</dimen>
+    <dimen name="Roster_detail_Name">16dp</dimen>
+    <dimen name="Roster_detail_property">12dp</dimen>
+    <dimen name="Roster_detail_education">12dp</dimen>
+    <dimen name="Photos_Catagory">15dp</dimen>
+    <dimen name="Photos_SportName">16dp</dimen>
+    <dimen name="Photos_DateTime">15dp</dimen>
+    <dimen name="teamScoreBoard_records">16sp</dimen>
+    <dimen name="Roster_Team_SortBy">15sp</dimen>
+    <dimen name="Roster_Team_SortName">15dp</dimen>
+    <dimen name="Roster_Team_SortList">20dp</dimen>
+    <dimen name="Roster_Team_MainLabel">18dp</dimen>
+    <dimen name="Roster_Team_SubLabel">16dp</dimen>
+    <dimen name="Roster_Team_height">250dp</dimen>
+    <dimen name="video_title_phone">14sp</dimen>
+    <dimen name="video_title_tablet">18sp</dimen>
+    <dimen name="Photo_height">95dp</dimen>
+    <dimen name="ThumbnailHeight">108dp</dimen>
+    <dimen name="ThumbnailRawHeight">130dp</dimen>
+    <dimen name="Roster_Image_height">224dp</dimen>
+    <dimen name="Roster_Image_width">169dp</dimen>
+    
+    <dimen name="video_Thumbnail_Height">90dp</dimen>
+    <dimen name="video_Thumbnail_Crop_Height">68dp</dimen>
+    <dimen name="video_Thumbnail_Width">120dp</dimen>
+    <integer name="video_thumbnail_width">120</integer>
+    <integer name="video_thumbnail_height">90</integer>
+    <integer name="video_thumbnail_crop_height">68</integer>
+    <integer name="video_rotator_height">360</integer>
+    <integer name="video_rotator_crop_height">270</integer>
+    <integer name="video_rotator_width">480</integer>
+    
+
+</resources>

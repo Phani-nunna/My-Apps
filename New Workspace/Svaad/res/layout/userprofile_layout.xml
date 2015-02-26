@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    tools:ignore="HardcodedText,UselessParent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000" >
+
+        <ImageView
+            android:id="@+id/userProfilePicCover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:alpha="0.6"
+            android:background="@drawable/default_profile"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/userProfilePic"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/default_profile"
+                android:scaleType="centerCrop" />
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/userProfilePic"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.svaad.utils.RobotoTextview
+                android:id="@+id/followerstextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userNameTextView"
+                android:layout_toRightOf="@+id/userProfilePic"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.svaad.utils.RobotoButton
+            android:id="@+id/btnFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="#4cae4c"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="Follow"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnFollow"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="Logout"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:id="@+id/ateItLl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/blueline"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/ateItTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Posts"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wishedLl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/wishedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Wishlist"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/photosLl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/photosTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Photos"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#555555" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/followersLl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/followerstextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="9990"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Followers"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/includePbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_centerHorizontal="true"
+        layout="@layout/customprogressbar" />
+
+</RelativeLayout>

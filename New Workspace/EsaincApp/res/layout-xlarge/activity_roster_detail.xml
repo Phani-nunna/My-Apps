@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llhedlinsedetailView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/llRosterdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:padding="2dp" >
+
+            <ImageView
+                android:id="@+id/imgRosterdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtRosterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Roster_detail_Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtProperty"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Roster_detail_property"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txtEducation"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/Roster_detail_education"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/webDetailView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/cutom_progress_bar" />
+
+</RelativeLayout>

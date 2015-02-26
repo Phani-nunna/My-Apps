@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img" >
+
+    <RelativeLayout
+        android:id="@+id/scoreboardButtons"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/sb_tab_bg"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" >
+
+        <Button
+            android:id="@+id/btnToday"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/TodayTxt"
+            android:text="@string/TodayTxt"
+            android:textColor="@color/scoreboardButtonsText"
+            android:textSize="@dimen/staff_phone_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRecent"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/btnToday"
+            android:contentDescription="@string/recentTxt"
+            android:text="@string/recentTxt"
+            android:textColor="@color/scoreboardButtonsText"
+            android:textSize="@dimen/staff_phone_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnUpcoming"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/btnToday"
+            android:contentDescription="@string/upcomingTxt"
+            android:text="@string/upcomingTxt"
+            android:textColor="@color/scoreboardButtonsText"
+            android:textSize="@dimen/staff_phone_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/scoreboardKeys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreboardButtons"
+        android:background="@drawable/sb_key_bg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pixel_stroke"
+            android:src="@drawable/sb_key_away" />
+
+        <TextView
+            android:id="@+id/txtAwayKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="15dp"
+            android:text="@string/awayTxt"
+            android:textColor="@color/scoreboardKeyText"
+            android:textSize="@dimen/scoreboard_tablet_subText"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pixel_stroke"
+            android:src="@drawable/sb_key_home" />
+
+        <TextView
+            android:id="@+id/txtHomeKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="15dp"
+            android:text="@string/homeTxt"
+            android:textColor="@color/scoreboardKeyText"
+            android:textSize="@dimen/scoreboard_tablet_subText"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageNeutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pixel_stroke"
+            android:src="@drawable/sb_key_neutral" />
+
+        <TextView
+            android:id="@+id/txtNeutalKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="2dp"
+            android:text="@string/neutralTxt"
+            android:textColor="@color/scoreboardKeyText"
+            android:textSize="@dimen/scoreboard_tablet_subText"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/scoreboardEventKeys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sb_key_bg"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/txtScrimmage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:text="@string/scrimmageTxt"
+            android:textColor="@color/scoreboardKeyText"
+            android:textSize="@dimen/scoreboard_tablet_subText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtConference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/txtScrimmage"
+            android:singleLine="true"
+            android:text="@string/conferenceTxt"
+            android:textColor="@color/scoreboardKeyText"
+            android:textSize="@dimen/scoreboard_tablet_subText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtExhibition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/txtScrimmage"
+            android:singleLine="true"
+            android:text="@string/exhibitionTxt"
+            android:textColor="@color/scoreboardKeyText"
+            android:textSize="@dimen/scoreboard_tablet_subText"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/scoreboardEventKeys"
+        android:layout_below="@id/scoreboardKeys"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@color/TableCellSelection" >
+    </ListView>
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/noResults"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/noResult_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

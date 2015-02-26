@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/listDishImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:alpha="0.6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic" />
+
+    <LinearLayout
+        android:id="@+id/txtheaderlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listDishImageButton"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/radialback"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/tvListName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compaq"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvListsubName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" KFC Res"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tagTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listDishImageButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="#tag1 #tag2 #tag3 #tag3"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagTxt"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/proflayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/prof_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="4dp"
+                android:src="@drawable/pic_def" />
+
+            <TextView
+                android:id="@+id/userTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/prof_img"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Name of the user "
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/someTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userTxt"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/prof_img"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="LovedIt ,Nice restaurent  "
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/someTxt"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/prof_img"
+                android:background="#88333333" />
+
+            <TextView
+                android:id="@+id/ViewsTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewLine"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/prof_img"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="You +23 loved it "
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/viewLine1"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_below="@+id/ViewsTxt"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/prof_img"
+                android:background="#88333333" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loved_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/itemLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/answerborder"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="loved it"
+        android:textColor="#3377ff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/wish_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/itemLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/loved_btn"
+        android:background="@drawable/answerborder"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center|center_horizontal"
+        android:text="wished it"
+        android:textColor="#3377ff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

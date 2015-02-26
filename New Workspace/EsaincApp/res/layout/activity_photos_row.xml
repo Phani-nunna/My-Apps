@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llPhotosRaw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <ImageView
+        android:id="@+id/imgPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPhotos"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/Photos_Catagory" />
+
+    <TextView
+        android:id="@+id/txtGalleryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCategory"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgPhotos"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/Photos_SportName"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPhotos"
+        android:layout_below="@id/txtGalleryName"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/Photos_DateTime" />
+
+</RelativeLayout>

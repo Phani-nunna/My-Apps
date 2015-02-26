@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5d6db"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d5d6db"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/llSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="clip_vertical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/btnRefresh"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/refresh"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnFoodies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llSpinner"
+                android:text="Foodies"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnFoodies"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:id="@+id/includePbar"
+            layout="@layout/customprogressbar" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl"
+            android:cacheColorHint="@android:color/transparent" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBottom="@+id/listView"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/home_cam" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <!-- <item -->
+    <!-- android:id="@+id/action_search" -->
+    <!-- android:icon="@drawable/abc_ic_search" -->
+    <!-- android:title="@string/action_search" -->
+    <!-- yourapp:showAsAction="ifRoom"/> -->
+
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="1"
+        android:title="@string/action_add"
+        yourapp:showAsAction="always"/>
+    <item
+        android:id="@+id/action_ate"
+        android:orderInCategory="2"
+        android:title="@string/action_ate"
+        yourapp:showAsAction="always"/>
+   
+
+</menu>

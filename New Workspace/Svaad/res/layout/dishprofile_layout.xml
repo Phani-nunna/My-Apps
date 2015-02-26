@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:ignore="HardcodedText,UselessParent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee" >
+
+            <LinearLayout
+                android:id="@+id/dishLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/includeDishBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/dish_profile_body" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:background="#eeeeee" >
+
+            <com.svaad.utils.ExpandableTextView
+                android:id="@+id/tvDishDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewRl"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relativelayout2"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/viewRl"
+            android:background="#eeeeee"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="5" >
+
+                <LinearLayout
+                    android:id="@+id/llRes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical" >
+
+                        <com.svaad.utils.RobotoTextview
+                            android:id="@+id/tvResturantName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#333333" />
+
+                        <com.svaad.utils.RobotoTextview
+                            android:id="@+id/tvResLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_action_next_item" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMap"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/btnMap"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/direction_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewRll"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relativelayout3"
+            android:background="#cccccc" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/actionRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewRll"
+            android:background="#eeeeee"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <com.svaad.utils.RobotoButton
+                        android:id="@+id/btnAteIt"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_border"
+                        android:drawableLeft="@drawable/love_ate"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:text="Ate it"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#555555" />
+                </LinearLayout>
+
+                <!-- <View -->
+                <!-- android:layout_width="1dp" -->
+                <!-- android:layout_height="match_parent" -->
+                <!-- android:layout_marginBottom="5dp" -->
+                <!-- android:layout_marginTop="5dp" -->
+                <!-- android:background="#999999" /> -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <com.svaad.utils.RobotoButton
+                        android:id="@+id/btnAddTo"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_border"
+                        android:drawableLeft="@drawable/heart"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:text="Wish it"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#555555" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewRlSmileys"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/actionRl"
+            android:background="#cccccc" />
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/tvHow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewRlSmileys"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="How is this Dish?"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/linearSmileys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHow"
+            android:orientation="horizontal"
+            android:weightSum="8" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnLoved"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/line_love" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvLoved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#lovedit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnGood"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/line_good" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvGood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#good" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnItsOk"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/line_meh" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvItsOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#itsok" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btnNever"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/line_yuck" />
+
+                <com.svaad.utils.RobotoTextview
+                    android:id="@+id/tvNever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#nevermind" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewRl2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/linearSmileys"
+            android:background="#cccccc" />
+
+        <com.svaad.utils.RobotoTextview
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewRl2"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="What people say..."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</RelativeLayout>

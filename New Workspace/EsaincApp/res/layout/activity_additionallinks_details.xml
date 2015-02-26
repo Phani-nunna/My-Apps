@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/webBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/sb_tab_bg"
+        android:baselineAligned="true"
+        android:gravity="bottom"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/imgPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_arrow_left_disabled" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_arrow_right_disabled" />
+
+        <ImageView
+            android:id="@+id/imgRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@drawable/web_refresh"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgCloseProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_stop" />
+
+        <ImageView
+            android:id="@+id/imgSlidingMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_open_disabled" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/webBottomBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- =========== BOTTOM MENU =============== -->
+
+    <RelativeLayout
+        android:id="@+id/customDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/webBottomBar"
+        android:background="#66666666"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" >
+
+        
+        <LinearLayout
+            android:id="@+id/popup_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/menu_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="25dp" >
+
+            <Button
+                android:id="@+id/btnBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_popupclick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/openBrowser"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_popupclick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/mailLink"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_popupclick_cancel"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="@string/cancel"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

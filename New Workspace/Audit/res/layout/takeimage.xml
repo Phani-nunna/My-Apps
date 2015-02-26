@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/take_image"
+        android:textColor="#000000"
+        android:textSize="17dip" />
+ <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+         android:textColor="#000000"
+        android:textSize="17dip"
+        android:layout_alignParentRight="true"
+         android:layout_marginTop="5dip"
+        android:text="@string/proceed"
+        android:visibility="visible" />
+    
+    <ImageView
+        android:id="@+id/take_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="150dip"
+        android:layout_below="@+id/take_photo"
+        android:layout_marginLeft="220dip"
+        android:src="@drawable/takeimage" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/take_imageview"
+        android:layout_alignLeft="@+id/take_imageview"
+        android:layout_alignRight="@+id/take_imageview"
+        android:layout_alignTop="@+id/take_imageview"
+        android:layout_marginLeft="135dip"
+        android:layout_marginTop="15dip"
+        android:textColor="#FFF000" />
+
+    <RelativeLayout
+        android:id="@+id/preview_images_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/take_imageview"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="20dip" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dip"
+            android:layout_height="60dip" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@id/image" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="30dip"
+            android:layout_toRightOf="@id/image1" />
+    </RelativeLayout>
+
+   
+</RelativeLayout>

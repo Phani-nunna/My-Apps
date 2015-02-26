@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<resources xmlns:tools="https://schemas.android.com/tools" 
+tools:ignore="TypographyDashes">
+  <!--Replace placeholder ID with your tracking ID-->
+  <string name="ga_trackingId">@string/GoogleAnalyticsTrackingID</string>
+  
+  <!--Enable automatic activity tracking-->
+  <bool name="ga_autoActivityTracking">true</bool>
+
+  
+  <!-- Enable debug -->
+   <bool name="ga_debug">true</bool>
+ 
+   <!-- The screen names that will appear in your reporting -->
+  
+   <!--
+   The inverval of time after all the collected data
+   should be sent to the server, in seconds.
+   -->
+   <integer name="ga_dispatchPeriod">20</integer>
+   
+  <!--Enable automatic exception tracking-->
+  <bool name="ga_reportUncaughtExceptions">true</bool>
+</resources>

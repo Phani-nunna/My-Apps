@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   >
+<TextView 
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:text="@string/hello"
+   />
+<TextView 
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:text="Enter ur First Name"
+   />
+<EditText
+   android:id="@+id/content11"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   />
+<TextView 
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:text="Enter ur Sur Name"
+   />
+<EditText
+   android:id="@+id/content22"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   />
+<Button
+   android:id="@+id/add1"
+   android:layout_width="fill_parent"
+   android:text="Add" android:layout_height="wrap_content"/>
+   
+   <Button
+   android:id="@+id/delete"
+   android:layout_width="fill_parent"
+   android:text="delateall"
+    android:layout_height="wrap_content"/>
+   
+   
+
+<ListView
+ android:id="@+id/contentlist1"
+ android:layout_width="2411dp" android:layout_height="1214dp"/>
+</LinearLayout>
